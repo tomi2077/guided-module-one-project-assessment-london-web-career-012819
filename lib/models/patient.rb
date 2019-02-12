@@ -3,5 +3,4 @@ class Patient < ActiveRecord::Base
   #has_many :reviews
   has_many :medicines, through: :reviews
   has_many :nurses, through: :medicines
-
 end
