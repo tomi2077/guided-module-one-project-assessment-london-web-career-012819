@@ -3,7 +3,7 @@ Medicine.delete_all
 Nurse.delete_all
 Review.delete_all
 
-Patient.create({name: Faker::Name.name},
+Patient.create([{name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
@@ -32,9 +32,10 @@ Patient.create({name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
-  {name: Faker::Name.name}])
+  {name: Faker::Name.name}
+  ])
 
-Nurse.create({name: Faker::Name.name},
+Nurse.create([{name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
   {name: Faker::Name.name},
@@ -72,25 +73,25 @@ Review.create([{review_message: "Lorem ipsum dolor sit amet."},
   {review_message: "Vestibulum id massa pellentesque, commodo urna vel, molestie risus."}
   ])
 
-  Medicine.Create([{name: "Apixibucil"},
-  {name: "Adriacilin"},
-  {name: "Somasulin"},
-  {name: "Alcaftonin"},
-  {name: "Pulmocilin"},
-  {name: "Afalinum"},
-  {name: "Acamkyn Thioderall"},
-  {name: "Arapan Empifenide"},
-  {name: "Dactinine Macrotaine"},
-  {name: "Alimcerol Epinethasone"},
-  {name: "Alglucoroban"},
-  {name: "Butabital"},
-  {name: "Altozyme"},
-  {name: "Hemadox"},
-  {name: "Naveltone"},
-  {name: "Eprothasol"},
-  {name: "Unidizem Ambegestrel"},
-  {name: "Alfevelam Aprenone"},
-  {name: "Acetylnovate Novalapril"},
-  {name: "Tacropine Alogsonide"},
-  {name: "Tiaferol"}
+  Medicine.create([{name: "Apixibucil", patient_id: 1, review_id: 17},
+  {name: "Adriacilin", patient_id: 1, review_id: 17},
+  {name: "Somasulin", patient_id: 4, review_id: 2},
+  {name: "Alcaftonin", patient_id: 6, review_id: 7},
+  {name: "Pulmocilin", patient_id: 9, review_id: 9},
+  {name: "Afalinum", patient_id: 22, review_id: 13},
+  {name: "Acamkyn Thioderall", patient_id: 14, review_id: 1},
+  {name: "Arapan Empifenide", patient_id: 6, review_id: 18},
+  {name: "Dactinine Macrotaine", patient_id: 27, review_id: 4},
+  {name: "Alimcerol Epinethasone", patient_id: 1, review_id: 8},
+  {name: "Alglucoroban", patient_id: 25, review_id: 15},
+  {name: "Butabital", patient_id: 11, review_id: 6},
+  {name: "Altozyme", patient_id: 19, review_id: 8},
+  {name: "Hemadox", patient_id: 12, review_id: 12},
+  {name: "Naveltone", patient_id: 10, review_id: 17},
+  {name: "Eprothasol", patient_id: 4, review_id: 5},
+  {name: "Unidizem Ambegestrel", patient_id: 8, review_id: 4},
+  {name: "Alfevelam Aprenone", patient_id: 30, review_id: 18},
+  {name: "Acetylnovate Novalapril", patient_id: 7, review_id: 6},
+  {name: "Tacropine Alogsonide", patient_id: 9, review_id: 3},
+  {name: "Tiaferol", patient_id: 16, review_id: 11}
   ])
