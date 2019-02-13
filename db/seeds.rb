@@ -86,9 +86,9 @@ Review.create([{review_message: "It took me 4 weeks to adjust to the first phase
   {review_message: "I am going to move to another study.", medicine_id:13, patient_id:13},
   {review_message: "I am happy with the medicine and all the medical staffs.", medicine_id:14, patient_id:14},
   {review_message: "Excellent medicine", medicine_id:15, patient_id:15},
-  {review_message: "Vestibulum id massa pellentesque, commodo urna vel, molesti.", medicine_id:16, patient_id:16},
-  {review_message: "Phasellus a odio id augue iaculis porttitor non sit amet risus.", medicine_id:17, patient_id:17},
-  {review_message: "Vestibulum id massa pellentesque, commodo urna vel, molestie risus.", medicine_id:18, patient_id:18}
+  {review_message: "I am getting better by the week", medicine_id:16, patient_id:16},
+  {review_message: "Medication is too strong for me.", medicine_id:17, patient_id:17},
+  {review_message: "The prescription makes me hungry.", medicine_id:18, patient_id:18}
   ])
 
   Medicine.create([{name: "Apixibucil", patient_id: 1, review_id: 17, nurse_id: 2},
