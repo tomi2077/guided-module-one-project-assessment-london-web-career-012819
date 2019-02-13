@@ -13,11 +13,14 @@ def welcome
 end
 
 def how_many_patients_on_study
+  puts " "
+  puts "§"*20
   puts "Please answer 'yes' or 'y' to know the number of patients currently on the trials?"
   puts ">"
   input = gets.chomp
   if input == "yes" || input == "y"
     puts Patient.all.size
+    puts "-"* 10
   else
   end
 end
@@ -28,6 +31,7 @@ def number_of_reviews
   input = gets.chomp
   if input == "yes" || input == "y"
     puts Review.all.size
+    puts "-"* 10
   else
   end
 end
@@ -42,6 +46,7 @@ def most_common_medicine_on_study
       medicine_count[med[:name]] += 1
     end
     puts medicine_count.max
+    puts "-"* 10
   end
 end
 
@@ -51,5 +56,6 @@ def print_reviews
   input = gets.chomp
   if input == "yes" || input == "y"
     Review.all[0...5].each {|a,b,c| puts a.review_message}
+    puts "-"* 10
   end
 end
