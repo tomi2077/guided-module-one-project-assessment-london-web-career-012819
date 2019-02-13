@@ -1,10 +1,10 @@
 require_relative '../config/environment'
-require_relative "../lib/command_line_interface.rb"
 
 system "clear"
 
-while true
+# while true
   welcome
-  #how_many_patients_on_study
+  how_many_patients_on_study
+  number_of_reviews
   most_common_medicine_on_study
-end
+# end
